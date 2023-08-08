@@ -43,45 +43,6 @@ def trail(hand):
     if hand[0][1] == hand[1][1] == hand[2][1]:
         return(f"It's a trial: {hand}")
 
-# #def pure_sequence():
-# if sample_hand[0][0] == sample_hand[1][0] == sample_hand[2][0]:
-#     for i in range(len(denominations)):
-#         if (
-#             denominations[i] == sample_hand[0][1] and
-#             denominations[i + 1] == sample_hand[1][1] and
-#             denominations[i + 2] == sample_hand[2][1]
-#         ):
-#             print(f"It's a pure sequence: {sample_hand}")
-#         elif (
-#             denominations[i] == sample_hand[0][1] and
-#             denominations[i - 1] == sample_hand[1][1] and
-#             denominations[i + 1] == sample_hand[2][1]
-#         ):
-#             print(f"It's a pure sequence: {sample_hand}")
-#         elif (
-#             denominations[i] == sample_hand[0][1] and
-#             denominations[i - 1] == sample_hand[1][1] and
-#             denominations[i - 2] == sample_hand[2][1]
-#         ):
-#             print(f"It's a pure sequence: {sample_hand}")
-#         elif (
-#             denominations[i] == sample_hand[0][1] and
-#             denominations[i + 1] == sample_hand[1][1] and
-#             denominations[i - 1] == sample_hand[2][1]
-#         ):
-#             print(f"It's a pure sequence: {sample_hand}")
-#         elif (
-#             denominations[i] == sample_hand[0][1] and
-#             denominations[i + 2] == sample_hand[1][1] and
-#             denominations[i + 1] == sample_hand[2][1]
-#         ):
-#             print(f"It's a pure sequence: {sample_hand}")
-#         elif (
-#             denominations[i] == sample_hand[0][1] and
-#             denominations[i - 2] == sample_hand[1][1] and
-#             denominations[i - 1] == sample_hand[2][1]
-#         ):
-#             print(f"It's a pure sequence: {sample_hand}")
 
 def pure_sequence(hand):
     denomination_list = [card[1] for card in hand]
